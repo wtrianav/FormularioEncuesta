@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Encuesta</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Formulario de encuesta de Segunda Oportunidad</h1>
+            <p id="description" class="description text-center"> Gracias por tomarse el tiempo de ayudarnos a
+                mejorar nuestra página.</p>
+        </header>
+    </div>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Nombre</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Nombre completo" required="">
+        </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Email" required="">
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" for="number">Edad <span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Edad">
+        </div>
+
+        <div class="form-group">
+            <p>¿Qué opción describe mejor tu ocupación actual?</p>
+            <select id="dropdown" name="role" class="form-control" required="">
+                <option disabled="" selected="" value="">Selecciona una opción</option>
+                <option value="student">Estudiante</option>
+                <option value="job">Trabajo de tiempo completo</option>
+                <option value="learner">Estudiante de tiempo completo</option>
+                <option value="preferNo">Prefiero no especificar</option>
+                <option value="other">Otro</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>¿Recomendarías Segunda Oportunidad a un amigo?</p>
+            <label><input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                    checked="">Definitivamente</label>
+            <label><input name="user-recommend" value="maybe" type="radio" class="input-radio">Tal vez</label>
+
+            <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">No estoy
+                seguro</label>
+        </div>
+
+        <div class="form-group">
+            <p>¿Qué es lo que más te gusta de Segunda Oportunidad?</p>
+            <select id="most-like" name="mostLike" class="form-control" required="">
+                <option disabled="" selected="" value="">Selecciona una opción</option>
+                <option value="publications">Las publicaciones</option>
+                <option value="courses">Los cursos</option>
+                <option value="design">El diseño</option>
+                <option value="interaction">La interación</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>¿Qué te gustaría que mejoráramos?<span class="clue">(Selecciona todos los que apliquen)</span></p>
+
+            <label><input name="prefer" value="design" type="checkbox" class="input-checkbox">El diseño</label>
+            <label><input name="prefer" value="publications" type="checkbox" class="input-checkbox">Las
+                publicaciones</label>
+            <label><input name="prefer" value="frequency-of-posts" type="checkbox" class="input-checkbox">La frecuencia
+                de las publicaciones</label>
+            <label><input name="prefer" value="courses" type="checkbox" class="input-checkbox">Los cursos</label>
+            <label><input name="prefer" value="more-videos" type="checkbox" class="input-checkbox">Más videos</label>
+            <label><input name="prefer" value="include-podcast" type="checkbox" class="input-checkbox">Incluir
+                podcats</label>
+            <label><input name="prefer" value="include-interviews" type="checkbox" class="input-checkbox">Incluir
+                entrevistas</label>
+            <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox">Foros</label>
+            <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Cursos
+                adicionales</label>
+        </div>
+
+        <div class="form-group">
+            <p>¿Algún comentario o sugerencia?</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+                placeholder="Déjanos tu comentario aquí..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Enviar</button>
+        </div>
+
+    </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(180deg, rgba(74, 66, 236, 0.8), rgba(240, 0, 0, 0.7)), url(https://image.freepik.com/foto-gratis/feliz-grupo-amigos-manos-juntas-medio_146671-15293.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.description {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    color: white;
+    margin-top: 100px;
+}
+
+#survey-form {
+    background: linear-gradient(130deg, #4a42ec 0%, #521d91 100%);
+    padding: 3.5rem 2.5rem;
+    border-radius: 0.5rem;
+    margin: 30px 250px 60px 250px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+.form {
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-radio, .input-checkbox {
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+input, button, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+    border-radius: 0.5rem;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #37af65;
+    border: 1px solid #37af65;
+    color: inherit;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
