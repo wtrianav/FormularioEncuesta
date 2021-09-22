@@ -30,13 +30,15 @@ body {
     line-height: 1.4;
     color: white;
     margin-top: 100px;
+    padding-left:50px;
+    padding-right: 50px;
 }
 
 #survey-form {
     background: linear-gradient(130deg, #4a42ec 0%, #521d91 100%);
     padding: 3.5rem 2.5rem;
     border-radius: 0.5rem;
-    margin: 30px 250px 60px 250px;
+    margin: auto;
 }
 
 label {
